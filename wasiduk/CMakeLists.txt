@@ -9,7 +9,7 @@ endif()
 message(STATUS "Building in ${CMAKE_BUILD_TYPE} mode")
 message(STATUS "Building with ${CMAKE_C_COMPILER_ID} ${CMAKE_C_COMPILER_VERSION} on ${CMAKE_SYSTEM}")
 
-set(CMAKE_C_FLAGS "$ENV{CFLAGS} -pedantic -std=c99 -Wall -Wextra -fstrict-aliasing -fno-omit-frame-pointer")
+set(CMAKE_C_FLAGS "$ENV{CFLAGS} -pedantic -std=c99 -Wall -Wextra -fstrict-aliasing -fno-omit-frame-pointer -Wno-unused-parameter -Wno-visibility -Wno-return-type")
 set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS} -DDEBUG -Werror -Wno-unused-value -O0 -g3")
 set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS} -DNDEBUG -O2 -g")
 
