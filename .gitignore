@@ -5,3 +5,5 @@ wasi-sdk*
 wapm.lock
 wapm_packages
 .DS_Store
+.vscode
+
